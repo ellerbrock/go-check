@@ -1,4 +1,4 @@
-![go-check](https://github.frapsoft.com/top/awesome-go.png)
+![go-check](https://github.frapsoft.com/top/go.png?v=001)
 
 # go-check
 
