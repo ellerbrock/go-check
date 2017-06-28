@@ -1,19 +1,22 @@
 package check
 
 import (
-	"log"
-
 	"github.com/fatih/color"
+	"log"
 )
 
 func Error(err error) {
 	if err != nil {
-		// ⚠️ ❌  ✘
-		color.Red("\n")
-		color.Red("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓")
-		color.Red("▓▓           ✘ ЄɌɌϴɌ ✘           ▓▓")
-		color.Red("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓")
-		color.Red("\n")
+
+		// other symbols: ⚠️  ❌  ✘
+
+		errMsg := `
+		▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		▓▓           ✘ ЄɌɌϴɌ ✘           ▓▓
+		▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+		`
+
+		color.Red(errMsg)
 		log.Fatal(err)
 	}
 }

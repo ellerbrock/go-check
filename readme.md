@@ -12,7 +12,7 @@ _Easy error check with colorful output_
 
 ## Example
 
-- `check.Error(err)` Checks for an error and
+- `check.Error(err)` exit the program on error with colorful output
 
 ```
 package main
